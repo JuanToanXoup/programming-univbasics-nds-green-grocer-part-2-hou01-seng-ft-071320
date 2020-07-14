@@ -93,4 +93,3 @@ c = [coupons.first]
 checkout(cart, c)
 
 end
-
