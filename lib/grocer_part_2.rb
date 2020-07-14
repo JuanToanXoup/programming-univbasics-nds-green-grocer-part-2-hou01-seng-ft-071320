@@ -69,6 +69,7 @@ def checkout(cart, coupons)
   prices = c.each_with_object([]) do |index,price_array|
     if index[:count] != 0
       price_array << index[:price]*index[:count]
+      binding.pry
     end
   end
   if prices.sum > 100
