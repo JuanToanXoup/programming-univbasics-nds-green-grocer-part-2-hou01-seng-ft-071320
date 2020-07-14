@@ -88,6 +88,7 @@ avocado = find_item_by_name_in_collection('AVOCADO', unconsolidated_cart)
 cart = [avocado, avocado]
 c = [coupons.first]
 checkout(cart, c)
+binding.pry
 end
 
 binding.pry
