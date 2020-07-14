@@ -68,6 +68,8 @@ def checkout(cart, coupons)
 
   prices = c.each_with_object([]) do |index,price_array|
     price_array << index[:price]*index[:count]
+  if prices > 100
+    prices *= 0.10
   end
   prices.sum
 end
