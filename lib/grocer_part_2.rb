@@ -71,5 +71,6 @@ def checkout(cart, coupons)
   if prices > 100
     prices *= 0.10
   end
+  end
   prices.sum
 end
