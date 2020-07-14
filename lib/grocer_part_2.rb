@@ -94,5 +94,3 @@ b = apply_coupons(a,[coupons.first])
 checkout(cart, c)
 
 end
-
-
