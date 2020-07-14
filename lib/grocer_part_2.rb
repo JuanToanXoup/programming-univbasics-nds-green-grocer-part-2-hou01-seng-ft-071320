@@ -70,7 +70,7 @@ def checkout(cart, coupons)
     price_array << index[:price]*index[:count]
   end
   if prices.sum > 100
-    total = prices.sum*0.10
+    total = prices.sum*0.90
   else
     total = prices.sum
   end
