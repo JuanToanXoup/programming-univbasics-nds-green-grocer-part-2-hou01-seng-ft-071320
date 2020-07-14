@@ -71,4 +71,3 @@ def checkout(cart, coupons)
   end
   prices.sum
 end
-binding.pry
