@@ -87,6 +87,6 @@ def coupons_clearance(coupons)
 avocado = find_item_by_name_in_collection('AVOCADO', unconsolidated_cart)
 cart = [avocado, avocado]
 c = [coupons.first]
-checkout(a, c)
+checkout(cart, c)
 end
 binding.pry
