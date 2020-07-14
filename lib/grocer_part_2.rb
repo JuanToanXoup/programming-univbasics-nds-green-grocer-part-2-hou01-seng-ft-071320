@@ -87,7 +87,7 @@ def coupons_clearance(coupons)
 avocado = find_item_by_name_in_collection('AVOCADO', unconsolidated_cart)
 cart = [avocado, avocado]
 c = [coupons.first]
-expect(checkout(cart, c)).to eq(4.00)
+checkout(cart, c)
 end
 
 binding.pry
