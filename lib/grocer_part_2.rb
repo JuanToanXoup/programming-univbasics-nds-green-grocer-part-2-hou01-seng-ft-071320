@@ -88,9 +88,6 @@ avocado = find_item_by_name_in_collection('AVOCADO', unconsolidated_cart)
 cart = [avocado, avocado]
 c = [coupons.first]
 a = consolidate_cart(unconsolidated_cart)
-b = apply_coupons(a,[coupons.first])
-
-
-checkout(cart, c)
+checkout(a, c)
 
 end
