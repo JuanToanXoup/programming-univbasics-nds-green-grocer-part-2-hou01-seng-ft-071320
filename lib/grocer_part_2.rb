@@ -63,7 +63,7 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   a = consolidate_cart(cart)
-  b = apply_coupons(a,[coupons.first])
+  b = apply_coupons(a,coupons)
   c = apply_clearance(b)
 
   prices = c.each_with_object([]) do |index,price_array|
