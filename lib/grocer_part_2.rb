@@ -7,7 +7,7 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   cart.each do |index|
     coupons.each do |coup_index|
-      if coup_index[:item] == index[:item] && coup_index[:num] >= index[:count]
+      if coup_index[:item] == index[:item] && index[:count] >= coup_index[:num]
         cart << {
             :item => "#{index[:item]} W/COUPON",
             :price => (coup_index[:cost]/coup_index[:num]),
