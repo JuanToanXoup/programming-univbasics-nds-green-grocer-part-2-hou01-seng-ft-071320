@@ -89,4 +89,3 @@ cart = [avocado, avocado]
 c = [coupons.first]
 checkout(cart, c)
 end
-
