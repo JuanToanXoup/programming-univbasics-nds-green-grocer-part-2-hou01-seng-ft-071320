@@ -89,5 +89,5 @@ cart = [avocado, avocado]
 c = [coupons.first]
 a = consolidate_cart(unconsolidated_cart)
 checkout(a, c)
-
+binding.pry
 end
