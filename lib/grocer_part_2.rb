@@ -77,6 +77,12 @@ def checkout(cart, coupons)
 end
 
 def coupons_clearance(coupons)
+  unconsolidated_cart = [
+    {:item => "AVOCADO", :price => 3.00, :clearance => true },
+    {:item => "AVOCADO", :price => 3.00, :clearance => true },
+    {:item => "KALE",    :price => 3.00, :clearance => false},
+    {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3},
+    {:item => "KALE",    :price => 3.00, :clearance => false, :count => 1}
 avocado = find_item_by_name_in_collection('AVOCADO', unconsolidated_cart)
 cart = [avocado, avocado]
 c = [coupons.first]
