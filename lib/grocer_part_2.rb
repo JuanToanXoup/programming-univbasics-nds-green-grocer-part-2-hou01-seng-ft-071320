@@ -90,9 +90,9 @@ c = [coupons.first]
 a = consolidate_cart(unconsolidated_cart)
 b = apply_coupons(a,[coupons.first])
 
-binding.pry
+
 checkout(cart, c)
-binding.pry
+
 end
 
-binding.pry
+
