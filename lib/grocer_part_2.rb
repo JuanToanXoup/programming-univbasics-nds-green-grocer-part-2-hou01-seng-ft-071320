@@ -77,4 +77,3 @@ def checkout(cart, coupons)
     prices.sum
   end
 end
-
