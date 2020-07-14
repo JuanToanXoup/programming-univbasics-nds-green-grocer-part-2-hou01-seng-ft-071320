@@ -26,7 +26,7 @@ def apply_clearance(cart)
   #
   # REMEMBER: This method **should** update cart
   applied_clearance = cart.each_with_object([]) do |index,discount_array|
-    if index[:clearance] == true
+    if index[:clearance] == true && index[:price] > 0
       index[:price] = ((index[:price]*index[:count]*(0.80))/index[:count]).round(2)
       discount_array<<index
     else
