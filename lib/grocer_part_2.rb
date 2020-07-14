@@ -67,7 +67,8 @@ def checkout(cart, coupons)
   c = apply_clearance(b)
 
   prices = c.each_with_object([]) do |index,price_array|
-    price_array << index[:price]*index[:count]
+    if index[:count] != 0
+      price_array << index[:price]*index[:count]
   end
   if prices.sum > 100
     prices.sum*0.90
